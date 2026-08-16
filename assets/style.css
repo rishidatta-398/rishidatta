@@ -274,7 +274,8 @@ html[data-theme="dark"] .btn { color: #0f1319; }
 
 .meta { font-size: .88rem; color: var(--ink-soft); }
 
-.work h3.display { margin-bottom: .55rem; }
+.card h3.display { margin-bottom: .55rem; }
+.card .meta-row + h3.display { margin-top: .1rem; }
 
 .card p { color: var(--ink-soft); font-size: .97rem; }
 
@@ -411,4 +412,22 @@ html[data-theme="dark"] .btn { color: #0f1319; }
   body { background: #fff; font-size: 11pt; }
   .section { padding-block: 1rem; }
   .card { box-shadow: none; break-inside: avoid; }
+}
+
+/* --- figures -------------------------------------------------------------- */
+
+figure.shot {
+  margin: 0 0 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+figure.shot img { width: 100%; height: auto; display: block; }
+figure.shot figcaption {
+  font-size: .82rem;
+  color: var(--muted);
+  padding: .85rem 1.1rem;
+  border-top: 1px solid var(--line-soft);
 }
