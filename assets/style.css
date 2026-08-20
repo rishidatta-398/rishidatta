@@ -10,7 +10,7 @@
   --card:      #ffffff;
   --ink:       #101521;
   --ink-2:     #414a5c;
-  --ink-3:     #737d92;
+  --ink-3:     #5e6779;
   --navy:      #1e3a5f;
   --navy-2:    #2f5b96;
   --cyan:      #3d7fb8;
@@ -37,7 +37,7 @@ html[data-theme="dark"] {
   --card:    #121826;
   --ink:     #eef1f7;
   --ink-2:   #b0b9cb;
-  --ink-3:   #7b8599;
+  --ink-3:   #8d97ab;
   --navy:    #7fa9dd;
   --navy-2:  #a3c4ec;
   --cyan:    #63b6e8;
@@ -380,7 +380,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   box-shadow: var(--shadow);
   transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
 }
-html[data-theme="dark"] .lnk { color: #080b12; }
+/* only the solid gradient button gets dark text in dark mode.
+   Scoped with :not() so ghost buttons and inline ledger links keep light text. */
+html[data-theme="dark"] .lnk:not(.quiet) { color: #080b12; }
 .lnk:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); }
 
 .lnk.quiet {
@@ -398,6 +400,8 @@ html[data-theme="dark"] .lnk.quiet:hover { color: var(--navy); }
   border-radius: 0; font-weight: 400;
 }
 .lrow .lnk:hover { transform: none; box-shadow: none; border-bottom-color: var(--navy); }
+/* beats html[data-theme="dark"] .lnk:not(.quiet) above */
+html[data-theme="dark"] .lrow .lnk { color: var(--navy); }
 
 /* --- closing -------------------------------------------------------------- */
 
