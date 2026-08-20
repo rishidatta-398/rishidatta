@@ -387,6 +387,9 @@ html[data-theme="dark"] .lnk { color: #080b12; }
   background: var(--card); color: var(--ink); border-color: var(--line);
 }
 .lnk.quiet:hover { border-color: var(--navy); color: var(--navy); }
+/* must come after the dark .lnk rule above, which would otherwise darken this text */
+html[data-theme="dark"] .lnk.quiet { color: var(--ink); }
+html[data-theme="dark"] .lnk.quiet:hover { color: var(--navy); }
 
 /* inline text links inside the ledger */
 .lrow .lnk {
