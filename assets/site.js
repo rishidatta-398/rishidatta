@@ -7,12 +7,16 @@
     try { return localStorage.getItem(KEY); } catch (e) { return null; }
   }
 
+  function label(theme) {
+    return theme === "dark" ? "Light" : "Dark";
+  }
+
   function apply(theme) {
     root.setAttribute("data-theme", theme);
-    var btn = document.querySelector(".toggle");
+    var btn = document.querySelector(".themer");
     if (btn) {
-      btn.textContent = theme === "dark" ? "☀" : "☾";
-      btn.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+      btn.textContent = label(theme);
+      btn.setAttribute("aria-label", "Switch to " + label(theme).toLowerCase() + " mode");
     }
   }
 
@@ -24,7 +28,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     apply(root.getAttribute("data-theme") || "light");
-    var btn = document.querySelector(".toggle");
+    var btn = document.querySelector(".themer");
     if (!btn) return;
     btn.addEventListener("click", function () {
       var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
