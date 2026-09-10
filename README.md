@@ -53,7 +53,8 @@ matching `<div class="row">` block and edit the text. To add a work item, copy a
 - Confirm the LinkedIn URL. The career portfolio PDF lists `linkedin.com/in/rishidatta1`,
   which does not match the `linkedin.com/in/rishi-datta1` used throughout this site. One of
   them is wrong.
-- The credit risk paper is described as in progress. Update `work.html` when it's finished
-  and add a link.
+- Done (Sep 2026): the credit risk paper is on arXiv as arXiv:2608.30086, first author Rishi
+  Datta with Lavanya Prahallad. Linked from `index.html`, `work.html`, `about.html`, and
+  `contact.html`. Note it is a preprint, not peer reviewed, and the pages say so.
 - Deliberately not included: phone number and home address. Both appear in the references
   PDF, and neither belongs on a public website.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Work — Rishi Datta</title>
-<meta name="description" content="Elected Director of Finance of a 130-member DECA chapter, Ethics Bowl club co-founder, the Oakberry franchise business plan, credit risk and AI research, and the full competition record.">
+<meta name="description" content="A first-author arXiv paper on classifier-guided prompting for credit-default prediction, elected Director of Finance of a 130-member DECA chapter, Ethics Bowl club co-founder, the Oakberry franchise business plan, and the full competition record.">
 <meta name="theme-color" content="#f2f3f6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
 <section class="opener">
   <div class="shell">
     <p class="tag" style="margin-bottom:1.1rem">Work &middot; 2025—2026</p>
-    <h1 class="d1">Two ledgers, one plan, and a paper <span class="navy ital">in progress</span>.</h1>
+    <h1 class="d1">Two ledgers, one plan, and a paper <span class="navy ital">on arXiv</span>.</h1>
     <p class="lede">
       Two of these are roles I hold right now. The rest came through DECA, where the
       deliverable is a real business document and the deadline is a competition.
@@ -135,26 +135,41 @@
       </article>
 
       <article class="entry" id="research">
-        <div class="no">04<b>In progress</b></div>
+        <div class="no">04<b>Aug 2026</b></div>
         <div>
-          <p class="kick">Research &middot; Research Spark Hub</p>
-          <h3 class="d3">Credit risk in the age of AI</h3>
+          <p class="kick">Research paper &middot; arXiv preprint &middot; Research Spark Hub</p>
+          <h3 class="d3">When does a classifier help an LLM?</h3>
           <p class="body meas">
-            A mentored research paper on credit risk and the effect artificial intelligence is
-            having on the field. Credit risk assessment has always been a judgment problem
-            dressed up as a maths problem, and machine learning changes the balance between
-            the two: models read more signal than any underwriter, but they also inherit
-            whatever is buried in the training data.
+            My first research paper, written with Lavanya Prahallad and posted to arXiv on 30
+            August 2026. I am the first author. The question is narrow on purpose: if you want
+            a language model to predict credit defaults, is it better to instruct it to behave
+            like a classifier, or to fit a real classifier first and build the prompt around
+            what it says?
           </p>
           <p class="body meas">
-            I'm working through what that means for lenders, for borrowers, and particularly
-            for people whose circumstances sit outside a model's assumptions. My mentor is
-            Lavanya Prahlad. The paper is still being written.
+            We tested both on the Default of Credit Card Clients dataset and reported recall,
+            F1, and area under the ROC and precision-recall curves with bootstrap confidence
+            intervals. A few-shot LLM had the best recall (0.47) and F1 (0.50) of any single
+            model, but ranked worse than a random forest, 0.72 AUC-ROC against 0.79. Telling it
+            to imitate a classifier changed nothing measurable. Adding the forest's predicted
+            probability to the prompt raised the LLM to 0.78, level with the forest, while it
+            held on to 0.118 more recall. Pruning the prompt down to the eight features the
+            classifier weighted most added another 0.071 recall and 0.032 F1.
           </p>
+          <p class="body meas">
+            The conclusion is deliberately unexciting: a simple classifier-guided prompt beats
+            the more elaborate arrangements. Composing it the other way round did not help, and
+            neither did stacking several classifiers. Six pages, four figures, filed under
+            cs.CL and cs.LG.
+          </p>
+          <div class="acts" style="margin-top:1.4rem">
+            <a class="lnk" href="https://arxiv.org/abs/2608.30086" target="_blank" rel="noopener">Read the paper on arXiv</a>
+          </div>
           <div class="keys">
             <span class="key">Credit risk</span>
-            <span class="key">Applied AI</span>
-            <span class="key">Literature review</span>
+            <span class="key">LLM prompting</span>
+            <span class="key">Random forests</span>
+            <span class="key">First author</span>
           </div>
         </div>
       </article>
@@ -228,6 +243,7 @@
     </div>
 
     <div class="ledger">
+      <div class="lrow"><span class="k">Paper</span><span class="v"><a class="lnk" style="border-bottom-width:1px" href="https://arxiv.org/abs/2608.30086" target="_blank" rel="noopener">When Does a Classifier Help an LLM?</a><small>arXiv:2608.30086 &middot; first author, with Lavanya Prahallad</small></span><span class="n">2026</span></div>
       <div class="lrow"><span class="k">Office</span><span class="v">Director of Finance, Amador Valley DECA<small>Elected. 130-member chapter.</small></span><span class="n">2026</span></div>
       <div class="lrow"><span class="k">Office</span><span class="v">Co-founder &amp; Treasurer, Ethics Bowl club<small>One of five founders.</small></span><span class="n">2026</span></div>
       <div class="lrow"><span class="k">Award</span><span class="v">1st Place, Franchise Business Plan<small>NorCal Career Development Conference</small></span><span class="n">2026</span></div>
@@ -249,11 +265,12 @@
   <div class="shell duet">
     <div>
       <p class="tag" style="margin-bottom:.9rem">Contact</p>
-      <h2 class="d2">Want to read the plan or the draft?</h2>
+      <h2 class="d2">Want to read the plan or the paper?</h2>
     </div>
     <div>
       <p class="lede" style="margin-bottom:1.75rem">
-        Happy to send either one over. Tell me a little about what you're working on.
+        The paper is on arXiv and I'm glad to send the plan over. Tell me a little about what
+        you're working on.
       </p>
       <div class="acts">
         <a class="lnk" href="mailto:rishidatta20@gmail.com">rishidatta20@gmail.com</a>
